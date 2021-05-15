@@ -1,0 +1,17 @@
+<mat-toolbar color="accent">
+  <mat-toolbar-row>
+    <a routerLink="/home" class="logo-icon">CarOnSale</a>
+    <span class="header-spacer"></span>
+    <a (click)="logoutAndRedirect()"
+      ><mat-icon
+        class="mat-icon"
+        aria-hidden="false"
+        aria-label="Example delete icon"
+        >logout</mat-icon
+      ></a
+    >
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
